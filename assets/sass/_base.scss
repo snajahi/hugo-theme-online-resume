@@ -76,7 +76,7 @@ small {
       margin-bottom: $spacing-unit / 2;
       padding: $spacing-unit / 10 0;
       border-bottom-color: rgba($theme-color, 0.25);
-      border-bottom-width: 1px;
+      border-bottom-width: 2px;
 
       i::after {
         content: "\00a0";
@@ -90,6 +90,7 @@ small {
     }
 
     .section-content {
+      text-align: justify;
       .description {
         margin-bottom: $spacing-unit / 2;
       }
@@ -153,12 +154,17 @@ small {
       .awarder,
       .reference-title {
         font-style: italic;
+        color: $secondary-text-color;
       }
 
-      .date,
-      .location,
-      .degree {
+      .date
+       {
         color: $text-third-color;
+      }
+
+      .location,
+      .degree{
+        font-style: italic;
       }
     }
   }
